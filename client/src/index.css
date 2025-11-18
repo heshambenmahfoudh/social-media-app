@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  @apply bg-gradient-to-b from-zinc-600;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.shadow {
+  box-shadow: rgb(113 122 131 / 11%) 0px 7px 30px 0px;
+  z-index: 9;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+img {
+  width: 100%;
+  object-fit: cover !important;
+}
+.active {
+  @apply bg-blue-100 rounded-full;
+}
+
+.none {
+  display: none !important;
+}
